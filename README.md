@@ -1,4 +1,4 @@
-Shuriken — LLM Red Team CLI (no backend)
+Shuriken — LLM Red Team CLI
 
 Shuriken is a single-file red‑team tool for LLM assistants. It simulates indirect prompt injection (RAG), canary exfiltration, and tool‑call abuse with no backend and no database. Run it from the terminal, feed it a YAML config, and get JSON or Markdown evidence.
 

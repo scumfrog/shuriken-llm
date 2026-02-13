@@ -1,4 +1,7 @@
-# 🔴 Shuriken — LLM Red Team Toolkit
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+
+# Shuriken — LLM Red Team Toolkit
 
 Modular framework for testing LLM robustness against prompt injection, canary exfiltration, tool abuse, and other **OWASP LLM Top-10** attack vectors.
 

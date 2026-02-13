@@ -133,7 +133,7 @@ _HTML_TEMPLATE = r"""<!DOCTYPE html>
 </head>
 <body>
 
-<h1>🔴 Shuriken — Red Team Report</h1>
+<h1>Shuriken — Red Team Report</h1>
 <div id="dashboard" class="dashboard"></div>
 
 <div class="charts">
@@ -170,10 +170,10 @@ _HTML_TEMPLATE = r"""<!DOCTYPE html>
 </table>
 
 <script>
-const RESULTS = /*__RESULTS_JSON__*/[];
-const SUMMARY = /*__SUMMARY_JSON__*/{};
-const BY_MODEL = /*__BY_MODEL_JSON__*/{};
-const SEV_COLORS = /*__SEVERITY_COLORS__*/{};
+const RESULTS = (/*__RESULTS_JSON__*/ || []);
+const SUMMARY = (/*__SUMMARY_JSON__*/ || {});
+const BY_MODEL = (/*__BY_MODEL_JSON__*/ || {});
+const SEV_COLORS = (/*__SEVERITY_COLORS__*/ || {});
 
 // Dashboard cards
 const dash = document.getElementById('dashboard');

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shuriken"
+version = "2.0.0"
+description = "LLM Red Team Toolkit — prompt injection, tool abuse, and OWASP LLM Top-10 testing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "requests>=2.28",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=2.2"]
+dev = ["pytest>=7.0"]
+all = ["sentence-transformers>=2.2", "pytest>=7.0"]
+
+[project.scripts]
+shuriken = "shuriken.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/YOURUSER/shuriken"
+Documentation = "https://github.com/YOURUSER/shuriken/tree/main/docs"
+
+[tool.setuptools.packages.find]
+include = ["shuriken*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]

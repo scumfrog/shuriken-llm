@@ -8,11 +8,11 @@ version = "2.0.0"
 description = "LLM Red Team Toolkit — prompt injection, tool abuse, and OWASP LLM Top-10 testing"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = { text = "BSD" }
 
 dependencies = [
-    "requests>=2.28",
-    "pyyaml>=6.0",
+  "requests>=2.28",
+  "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
@@ -32,5 +32,9 @@ include = ["shuriken*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+addopts = "-q"

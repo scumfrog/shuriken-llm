@@ -1,2 +1,0 @@
-[console_scripts]
-shuriken = shuriken.__main__:main
